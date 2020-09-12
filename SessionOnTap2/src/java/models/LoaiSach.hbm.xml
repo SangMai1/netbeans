@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 5, 2020 9:06:11 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="models.LoaiSach" table="LoaiSach" schema="dbo" catalog="Ontap" optimistic-lock="version">
+        <id name="maLoaiSach" type="int">
+            <column name="maLoaiSach" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenLoaiSach" type="string">
+            <column name="tenLoaiSach" />
+        </property>
+    </class>
+</hibernate-mapping>

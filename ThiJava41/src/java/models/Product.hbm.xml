@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 6, 2020 8:40:10 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="models.Product" table="Product" schema="dbo" catalog="ThiJaVa4" optimistic-lock="version">
+        <id name="maSp" type="string">
+            <column name="maSP" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenSp" type="string">
+            <column name="tenSP" />
+        </property>
+        <property name="ngayNhap" type="date">
+            <column name="ngayNhap" length="10" />
+        </property>
+        <property name="soLuong" type="java.lang.Integer">
+            <column name="soLuong" />
+        </property>
+        <property name="giaTien" type="java.lang.Double">
+            <column name="giaTien" precision="53" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

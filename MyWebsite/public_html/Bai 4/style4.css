@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 26, 2019, 2:29:36 PM
+    Author     : SANG
+*/
+
+#wrapper {
+    width: 960px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+}
+nav {
+    background-color: #005b9f;
+    height: 60px;   
+}
+nav > ul {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0;
+    margin: 0 auto;
+}
+nav > ul > li {
+    display: inline-block;
+    width: 19%;
+    line-height: 40px;
+    background-color: orange;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-radius: 10px;
+}
+nav > ul > li a {
+    color: red;
+    text-decoration: none;
+}
+nav > ul > li a:hover {
+    background-color: white;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-radius: 10px;
+}
+.sub-menu {
+    position: absolute;
+    list-style-type: none;
+    background-color: orange;
+    display: none;
+    z-index: 1;
+    
+}
+.sub-menu li {
+    width: 157px;
+    padding: 0;
+    margin-left: -15px;
+    border-top: 1px dotted white;
+    border-radius: 10px;
+}
+.sub-menu li a{
+    background-color: yellow;
+    margin-left: -22px;
+}
+nav li:hover .sub-menu{
+/*    background: url(../images/hand_point_270.png)no-repeat 1px;*/
+    display: block;
+    border-radius: 10px;
+}

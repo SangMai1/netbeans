@@ -1,0 +1,57 @@
+<%-- 
+    Document   : infor
+    Created on : Mar 6, 2020, 9:12:09 AM
+    Author     : SANG
+--%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <div class="container" style="margin-top: 10px;">
+            <div class="row"
+                 style="border: 1px darkgrey solid; border-radius: 10px; width: 50%; margin: 0 auto; padding: 20px;">
+                <div class="col-sm-12">
+
+                    <h2 class="myclass">Register</h2>
+                    <form action="InforServlet?action=${ACTION}" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label>ID</label> 
+                            <input type="text" value="${INFOR.id}"
+                                   class="form-control" name="id" placeholder="Enter id">
+                        </div>
+                        <div class="form-group">
+                            <label>Full Name</label> 
+                            <input type="text" value="${INFOR.name}"
+                                   class="form-control" name="name" placeholder="Enter name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Photo</label> <br/>
+                            <c:if test="${INFOR.photo != null}">
+                                <img src="uploads/${INFOR.photo}" width="80" height="70"/>
+                            </c:if>
+                            <input type="file" 
+                                   class="form-control" name="photo" placeholder="Enter photo">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="reset" class="btn btn-primary">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

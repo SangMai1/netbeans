@@ -1,0 +1,189 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 21, 2019, 2:38:58 PM
+    Author     : SANG
+*/
+
+body {
+    background-color: gainsboro;
+}
+#wrapper {
+    width: 960px;
+    height: auto;
+    background-color: #FDFDFD;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 328px;
+    background-color: orange; 
+    position: relative;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+}
+#main-container {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+article {
+    width: 70%;
+    height: 100%;
+    background-color: #FDFDFD;
+    float: left;
+    border: 1px solid gray;
+   
+}
+aside {
+    width: 29%;
+    height: auto;
+    background-color: #FDFDFD;
+    float: left;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+}
+.title {
+    text-align: center;
+    color: red;
+    padding: 3px 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+/*.col-33 {
+    width: 32%;
+    height: 200px;
+    background-color: gray;
+    border: 1px solid gray;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px gray;
+}
+.col-33 img {
+    margin: 30px 8px;
+}
+*/
+.clear {
+    clear: both;
+}
+#vmenu {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 2px gray;
+    margin: 5px;
+}
+#vmenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+#vmenu ul li {
+    padding-left: 5px;
+    border-bottom: 1px dotted orange;
+    display: block;
+}
+#vmenu ul li a{
+    text-decoration: none;
+    line-height: 30px;
+    background: url(../images/bullet_yellow.png) no-repeat 1px;
+    padding:  5px 5px 6px 40px;
+    color: blue;
+    display: block;
+    font-size: 16px;
+}
+#vmenu ul li a:hover{
+    text-decoration: underline;
+    background: url(../images/bullet_red.png) no-repeat 1px;
+    display: block;
+    background-color: yellow;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.box-menu-top {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 60px;
+    position: absolute;
+    border-bottom-left-radius: 50px;
+}
+
+.box-menu-top ul {
+    list-style-type: none;
+    margin: 0;
+    line-height: 60px;
+}
+.box-menu-top ul li {
+    display: inline-block;
+    width: 100px;
+}
+.box-menu-top ul li a{
+    color:  white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.box-menu-top ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.san-pham {
+    width: 32%;
+    height: 250px;
+    border: 1px solid gray;
+    box-shadow: 2px 3px gray;
+    border-radius: 5px;
+    margin: 10px 3px;
+    float: left;
+    position: relative;
+}
+.san-pham img{
+    width: 200px;
+    margin-left: 7px;
+}
+.san-pham .images{
+    width: 20px;
+    margin: 0;
+}
+.san-pham h3 {
+    text-align: center;
+    color: red;
+    margin: 7px 0;
+    border-bottom: 1px solid gray;
+}
+.san-pham .price {
+    font-size: 28px;
+    font-weight: 600;
+    color: yellow;
+    position: absolute;
+    left: 5px;
+    bottom: 15px;
+}
+.san-pham .icons{
+    width: 20px;
+    height: 60px;
+    position: absolute;
+    right: 5px;
+    bottom: 18px;
+}
+.san-pham .new-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.san-pham .new-img img{
+    width: 45px;
+    
+}

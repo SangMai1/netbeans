@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 13, 2020 7:34:47 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="models.Staffs" table="staffs" schema="dbo" catalog="dbDemo" optimistic-lock="version">
+        <id name="id" type="string">
+            <column name="id" length="10" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="departs" class="models.Departs" fetch="select">
+            <column name="depart_id" length="10" />
+        </many-to-one>
+        <property name="birthday" type="date">
+            <column name="birthday" length="10" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="gender" type="java.lang.Boolean">
+            <column name="gender" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="notes" type="string">
+            <column name="notes" length="500" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="12" />
+        </property>
+        <property name="photo" type="string">
+            <column name="photo" length="500" />
+        </property>
+        <property name="salary" type="java.lang.Double">
+            <column name="salary" precision="53" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

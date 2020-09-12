@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 5, 2020 9:06:11 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="models.Sach" table="Sach" schema="dbo" catalog="Ontap" optimistic-lock="version">
+        <id name="maSach" type="string">
+            <column name="maSach" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="loaiSach" class="models.LoaiSach" fetch="select">
+            <column name="maLoaiSach" />
+        </many-to-one>
+        <property name="tenSach" type="string">
+            <column name="tenSach" />
+        </property>
+        <property name="ngayNhap" type="date">
+            <column name="ngayNhap" length="10" />
+        </property>
+        <property name="giaTien" type="java.lang.Double">
+            <column name="giaTien" precision="53" scale="0" />
+        </property>
+        <property name="soLuong" type="java.lang.Integer">
+            <column name="soLuong" />
+        </property>
+    </class>
+</hibernate-mapping>
